@@ -1,0 +1,37 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'BricolageGrotesque';
+    src:url('../fonts/BricolageGrotesque-Regular.ttf') format('woff');
+}
+
+.circularPackingParentDiv{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 10px 0px 10px;
+    font-family: 'BricolageGrotesque';
+}
+
+.circularPackingParentDiv::-webkit-scrollbar{  width: 5px;  }
+
+.circularPackingParentDiv::-webkit-scrollbar-track{ border-radius: 0px; }
+
+.circularPackingParentDiv::-webkit-scrollbar-thumb { 
+    border-radius: 13px; 
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.circularPackingParentDiv::-webkit-scrollbar-thumb:hover{ 
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'BricolageGrotesque';
+    src:url('../fonts/BricolageGrotesque-Regular.ttf') format('woff');
+}
+  
+.scatterMark {
+    opacity: 0.8;
+    stroke-width: 1px;
+    transition: opacity 1s, filter 1s;
+}
+
+.scatterMarkDimmed {
+    opacity: 0.2;
+    filter: saturate(0);
+}
+
+.scatterMark::hover {
+    opacity: 1;
+    cursor: pointer;
+    stroke: #EEEEEE;
+    stroke-width: 1px;
+}

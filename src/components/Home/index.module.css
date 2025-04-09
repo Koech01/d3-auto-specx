@@ -1,0 +1,121 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'BricolageGrotesque';
+    src:url('../fonts/BricolageGrotesque-Regular.ttf') format('woff');
+}
+  
+
+/* Smartphones */
+@media only screen and (max-width: 767px) {
+    .homeNavbarDiv {
+        align-items:center;
+        height: fit-content;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .homeContentDiv { 
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* Smartphones and small tablets in landscape mode */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .homeNavbarDiv {
+        height: fit-content;
+        padding: 5px 0px 0px 0px;
+        align-items:last baseline;
+    }
+
+    .homeContentDiv { flex: 1; }
+}
+
+
+/* Tablets and larger screens */
+@media screen and (min-width: 1024px) { 
+    .homeNavbarDiv {
+        height: fit-content;
+        padding: 5px 0px 0px 0px;
+        align-items:last baseline;
+    }
+
+    .homeContentDiv { flex: 1; }
+}
+
+.homeParentDiv{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow-y: hidden;
+    flex-direction: column;
+    background-color: #141414;
+    font-family: 'BricolageGrotesque';
+}
+
+.homeNavbarDiv {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    border: none;
+    justify-content: center;
+}
+
+.homeNavbarParent {
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+    padding: 4px;
+    border-radius: 20px;
+    align-items: center;
+    box-sizing: border-box; 
+    background-color: #1C1C1C;
+}
+
+.homeNavbarLabel{
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 20px;
+    padding: 4px 8px 4px 8px;
+    background-color: #202020;
+}
+
+.homeNavbarLabel.active { background-color: #2B2B2B; }
+
+.homeNavbarLabel {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.homeNavbarLabel:focus { outline: none !important; }
+
+.homeNavbarLabel > input { display: none; }
+
+.homeNavbarLabel > span { 
+    font-size: 15px; 
+    color: #757575; 
+}
+
+.homeNavbarLabel.active span { 
+    font-size: 15px; 
+    color: #FAFAFA; 
+}
+
+.homeContentDiv {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+}

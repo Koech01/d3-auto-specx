@@ -1,0 +1,125 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'BricolageGrotesque';
+    src:url('../fonts/BricolageGrotesque-Regular.ttf') format('woff');
+}
+
+.circleNode {
+    opacity: 0.8;
+    stroke-width: 1px;
+    transition: opacity 1s, filter 1s;
+}
+
+.scatterMark {
+    opacity: 0.8;
+    stroke-width: 1px;
+    transition: opacity 1s, filter 1s;
+}
+
+.scatterMarkDimmed {
+    opacity: 0.2;
+    filter: saturate(0);
+}
+
+.scatterMark::hover {
+    opacity: 1;
+    cursor: pointer;
+    stroke: #EEEEEE;
+    stroke-width: 1px;
+}
+
+.scatterMarkStatsDiv {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    z-index: 999;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn ease .5s;
+    border: 2px solid #2B2B2B;
+    background-color: #141414;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+}
+
+.scatterMarkTable {
+    display: flex;
+    gap: 0px;
+    z-index: 999;
+    padding: 0px;
+    border: none;
+    flex-direction: column;
+    margin: 4px 10px 3px 10px;
+}
+
+.scatterMarkTableBody {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.scatterMarkRows, .scatterMarkLastRows {
+    display: flex;
+    margin: 0px;
+    z-index: 999;
+    border: none;
+}
+
+.scatterMarkColumnsLabels {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 999;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 110px; 
+    color: #BDBDBD; 
+    white-space: nowrap;
+}
+
+.scatterMarkColumns {
+    display: flex;
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 999;
+    font-size: 14px;
+    cursor: pointer;
+    color: #BDBDBD; 
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+.circleNodeLabel {
+    margin: 0px;
+    padding: 0px;
+    fill: #FAFAFA;
+    font-size: 12.5px;
+    visibility: hidden;
+    animation: fadeIn ease .5s;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+}
+
+.showText { visibility: visible; }
+
+.hideText { visibility: hidden; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadeIn {
+    animation-duration: .5s;
+    animation-name: fadeIn;
+}

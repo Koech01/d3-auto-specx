@@ -1,0 +1,528 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'BricolageGrotesque';
+    src:url('../fonts/BricolageGrotesque-Regular.ttf') format('woff');
+}
+  
+
+/* Smartphones */
+@media only screen and (max-width: 767px) {
+
+    .scatterPlotParentDiv { 
+        height: 100%;
+        flex-direction: column; 
+    }
+
+    .scatterPlotDiv {
+        flex: 1;
+        width: 100%;
+        border: none;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .scatterMobileMenu {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        border: none; 
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .scatterMobileChildMenu {
+        display: flex;
+        width: 84%;
+        padding: 0px;
+        border: none;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .scatterMobileDropdownParent {
+        position: relative;
+        display: flex;
+        gap: 5%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border: none; 
+    }
+
+    .scatterMobileYParent, .scatterMobileXParent{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        border: none; 
+        flex-direction: column;
+    }
+
+    .scatterMobileYDefault, .scatterMobileXDefault{
+        display: flex;
+        margin: 0px;
+        transition: .5s;
+        cursor: pointer;
+        color: #9E9E9E; 
+        font-size: 13.5px; 
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 0px 6px 0px;
+        border: 2px solid #1E1E1E;
+        background-color: #141414;
+    }
+
+    .scatterMobileYDefault:hover, .scatterMobileXDefault:hover{
+        color: #9E9E9E;   
+        border: 2px solid #161616;
+    }
+
+    .scatterMobileYDefault, .scatterMobileXDefault {
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .scatterMobileYDefault:focus, .scatterMobileXDefault:focus { outline: none !important; }
+
+    .scatterMobileYDefault:active, .scatterMobileXDefault:active{ transform: scale(0.95); }
+
+    .scatterMobileYOptionDiv, .scatterMobileXOptionDiv{
+        position: absolute;
+        display: flex;
+        gap: 3px;
+        bottom: 145%;
+        font-size: 13px; 
+        color: #9E9E9E; 
+        width: fit-content;
+        border-radius: 6px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px 0px 0px;
+        padding: 5px 3px 5px 3px;
+        transition: .5s ease-out;
+        background-color: #141414;
+        border: 2px solid #1E1E1E;
+    }
+
+    .scatterMobileYOptionDiv{ left: 8%; }
+
+    .scatterMobileXOptionDiv{ right: 8%; }
+
+    .scatterMobileYOptionText, .scatterMobileXOptionText{
+        display: flex;
+        margin: 0px;
+        cursor: pointer;
+        font-size: 14px; 
+        color: #9E9E9E; 
+        border-radius: 4px;
+        padding: 3px 10px 3px 10px;
+    }
+    
+    .scatterMobileYOptionText:hover,
+    .scatterMobileXOptionText:hover,
+    .scatterMobileYSelectedTxt, 
+    .scatterMobileXSelectedTxt{
+        margin: 0px;
+        border: none;
+        cursor: pointer;
+        color: #FFFFFF; 
+        border-radius: 3px;
+        background: #1C1C1C;
+        padding: 3px 10px 3px 10px;
+    }
+
+    .scatterMobileTable {
+        display: flex;
+        gap: 0px;
+        width: 82%;
+        padding: 0px;
+        overflow-y: auto;
+        height: fit-content;
+        border-radius: 15px;
+        flex-direction: column;
+        transition: .5s ease-in;
+        margin: 10px 0px 0px 0px;
+        border: 2px solid #1E1E1E;
+        background-color: transparent;
+    }
+
+    .scatterMobileModelTable{
+        display: flex; 
+        gap: 5px;  
+        margin: 0px;
+        border: none;
+        flex-direction: column;
+        padding: 8px 15px 5px 15px;
+    }
+
+    .scatterMobileModelTableBody{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .scatterMobileModelRow, .scatterMobileModelRowLast {
+        display: flex; 
+        margin: 0px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 0px 0px 2px 0px;
+    }
+
+    .scatterMobileModelRow { border-bottom: 1px solid #2B2B2B; }
+
+    .scatterMobileItemlKey{
+        display: flex;
+        width: 35%;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px; 
+        color: #9E9E9E; 
+    }
+
+    .scatterMobileItemlVal{
+        display: flex;
+        flex: 1;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px; 
+        color: #9E9E9E; 
+        justify-content: flex-end;
+    }
+
+    .hiddenTableBorder { border: 2px solid #141414; }
+
+    .hiddenTextColor { color: #141414; }
+
+    .hiddenBorderColor { 
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #141414; 
+    }
+
+    .scatterSideDiv, .scatterAbstractPng, .scatterFlowerNoAnime { display: none !important; }
+}
+
+
+/* Smartphones and small tablets in landscape mode */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .scatterPlotParentDiv { height: 100%; }
+
+    .scatterPlotDiv { 
+        width: 70%;
+        padding: 0px 0px 0px 5px; 
+    }
+
+    .scatterSideDiv { align-items: center; }
+
+    .scatterSideChildDiv{
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .scatterMobileMenu { display: none !important; }
+}
+
+
+/* Tablets and larger screens */
+@media screen and (min-width: 1024px) { 
+
+    .scatterPlotParentDiv { height: 100%; }
+
+    .scatterPlotDiv { 
+        width: 80%;
+        padding: 0px 0px 0px 5px; 
+    }
+
+    .scatterSideChildDiv{ width: 90%; }
+
+    .scatterMobileMenu { display: none !important; }
+}
+
+.scatterPlotParentDiv {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    overflow-y: auto;
+    font-family: 'BricolageGrotesque';
+}
+
+.scatterPlotParentDiv::-webkit-scrollbar{  width: 5px;  }
+
+.scatterPlotParentDiv::-webkit-scrollbar-track{ border-radius: 0px; }
+
+.scatterPlotParentDiv::-webkit-scrollbar-thumb { 
+    border-radius: 13px; 
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.scatterPlotParentDiv::-webkit-scrollbar-thumb:hover{ 
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.scatterPlotDiv {
+    display: flex;
+    margin: 0px;
+    border: none;
+    justify-content: center;
+}
+
+.scatterSideDiv {
+    display: flex;
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+}
+
+.scatterSideChildDiv{
+    display: flex;
+    gap: 15px;
+    border: none;
+    padding: 0px;
+    height: fit-content;
+    margin: 20px 0px 0px 0px;
+}
+
+.scatterSpacedChildDiv{ flex-direction: column; }
+
+.scatterAxisYParent, .scatterAxisXParent{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.scatterAxisYDefault, .scatterAxisXDefault{
+    display: flex;
+    margin: 0px;
+    transition: .5s;
+    color: #9E9E9E; 
+    font-size: 13.5px; 
+    border-radius: 20px;
+    align-items: center;
+    background-color: none;
+    justify-content: center;
+    padding: 6px 0px 6px 0px;
+    cursor: pointer !important;
+    border: 2px solid #1E1E1E;
+}
+
+.scatterAxisYDefault:hover, .scatterAxisXDefault:hover{
+    color: #FAFAFA; 
+    border: 2px solid #161616;
+}
+
+.scatterAxisYDefault:active, .scatterAxisXDefault:active{ transform: scale(0.95); }
+
+.scatterAxisYOptionDiv, .scatterAxisXOptionDiv{
+    display: flex;
+    gap: 3px;
+    padding: 4px;
+    color: #FAFAFA; 
+    font-size: 13.5px; 
+    border-radius: 8px;
+    background-color: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0px 0px 0px;
+    border: 2px solid #1E1E1E;
+}
+
+.scatterAxisYOptionText, .scatterAxisXOptionText{
+    display: flex;
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+    color: #757575; 
+    font-size: 13.5px; 
+    border-radius: 4px;
+    padding: 3px 0px 3px 8px;
+}
+
+.scatterAxisYOptionText:hover,
+.scatterAxisXOptionText:hover,
+.scatterAxisYSelectedTxt, 
+.scatterAxisXSelectedTxt{
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+    color: #E0E0E0; 
+    font-size: 13.5px;
+    border-radius: 4px;
+    background: #1C1C1C;
+    padding: 3px 0px 3px 8px;
+}
+
+.scatterSpecsParent{
+    position: relative;
+    display: flex;
+    width: 90%;
+    border: none;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.scatterFlowerNoAnime {
+    position: absolute;
+    display: flex;
+    top: 5%;
+    left: 0%; 
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.scatterAbstractPng {
+    position: absolute;
+    display: flex;
+    top: 5%;
+    right: 0%; 
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    animation: moveAndSpin 5s linear 2s forwards; 
+}
+
+.scatterTurboPng{
+    position: absolute;
+    display: flex;
+    right: 0%;
+    bottom: 0%;
+    width: 30%;
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.scatterSpecsCard{ 
+    display: flex;
+    width: 80%;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    height: fit-content;
+    align-items: center;
+    margin: 13% 0% 24% 8%;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s ease-out;
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardTilt { transform: rotate(-2deg); }
+
+.scatterSpecsTable{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.scatterSpacedTable{
+    display: flex;
+    gap: 15px;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+}
+
+.scatterSpacedTableBody{
+    margin: 0px;
+    padding: 0px;
+}
+
+.scatterSpacedTableRow{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+}
+
+.scatterSpecsRow{
+    width: 50%;
+    margin: 0px;
+    border: none;
+    font-size: 15px;
+    color: #BDBDBD;
+    font-weight: 100;
+    text-align: left;
+    padding: 2px 6px 2px 6px;
+}
+
+.scatterSpecsValueRow{
+    width: 50%;
+    margin: 0px;
+    border: none;
+    font-size: 15px;
+    color: #BDBDBD;
+    font-weight: 100;
+    text-align: right;
+    padding: 2px 6px 2px 6px;
+}
+
+.scatterSpacedRow{
+    margin: 0px;
+    border: none;
+    font-size: 15px;
+    color: #BDBDBD;
+    font-weight: 100;
+    padding: 2px 6px 2px 0px;
+}
+
+@keyframes moveAndSpin {
+    0% {
+        right: 0;
+        transform: rotate(4680deg);
+        animation-timing-function: ease;
+    }
+
+    50% {
+        right: calc(100% - 30%); 
+        transform: rotate(0deg); 
+        animation-timing-function: ease;
+    }
+
+    100% {
+        right: calc(100% - 30%); 
+        transform: rotate(-0deg); 
+        animation-timing-function: ease; 
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+.fadeIn {
+    animation-duration: .5s;
+    animation-name: fadeIn;
+}
