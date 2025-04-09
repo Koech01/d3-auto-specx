@@ -1,13 +1,15 @@
-# Veg-Connect Setup Guide
-A data-driven React-Django app that fetches plant data from OpenFarm’s API, allowing users to schedule and share farming tasks in topic-specific communities while accessing plant growth insights and growing tips through features like bar graphs. Additionally, it incorporates a robust real-time chat system utilizing WebSocket technology for instantaneous communication and seamless collaboration among community members.
+# Auto Spec
+Auto Spec is an interactive web application that visualizes performance car metrics and explores brand relationships. Built with React and TypeScript and powered by D3.js, the app offers:
+
+-A scatter plot for real-time comparison of car metrics (e.g., horsepower, torque) with customizable axes.
+-Detailed data point information on hover, displayed in a responsive table.
+-A circular packing visualization that dynamically clusters car models by brand using D3.js force simulation.
 
 # Table of Contents
-    - Prerequisites.
-    - Installation.
-    - Environment Setup.
-    - Frontend Setup.
-    - Running the Application. 
-    - License. 
+- Prerequisites.
+- Installation.
+- Running the Application.
+- License.
 
 # Prerequisites
 Before you begin, ensure you have the following installed:
@@ -19,12 +21,12 @@ Clone the repository and set up your virtual environment:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Koech01/veg-connect.git
-virtualenv veg-connect/
-cd veg-connect
+git clone https://github.com/Koech01/d3-auto-specx
+cd d3-auto-specx
 ```
 
 2. Install dependencies:
+Run the following commands to install all required packages
 ```bash
 npm install
 npm i d3
@@ -33,11 +35,11 @@ npm i @types/d3
 
 # Running the Application.
 
-1. For chat functionality, ensure Redis is running:
+1. To launch the app locally, run:
 ```bash
 npm run start
 ```
-You can now access the application at `http://127.0.0.1:8000/`.
+Once the development server starts, open your browser and go to.
 
 # License.
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
